@@ -1,0 +1,721 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+		"python Base Library": {
+		 	"prefix": "base",
+		 	"body": [
+				"import matplotlib.pyplot as plt"
+				"import seaborn as sns; sns.set()"
+				"plt.rcParams['font.family']='IPAexGothic'"
+				"import numpy as np"
+				"import pandas as pd"
+				""
+		 	],
+		 	"description": ""
+		 }
+
+		"Numpy": {
+			"prefix": "np",
+			"body": [
+			   "import numpy as np"
+			   ""
+			],
+			"description": ""
+		}
+		"NpArray": {
+			"prefix": "nparray",
+			"body": [
+			   "np.array([$1])"
+			   ""
+			],
+			"description": ""
+		}
+		"matplot": {
+			"prefix": "plot",
+			"body": [
+			   "import matplotlib.pyplot as plt"
+			   ""
+			],
+			"description": ""
+		}
+		"xtrainxtest": {
+			"prefix": "xtraintest",
+			"body": [
+			   "xtrain, xtest, ytrain, ytest = train_test_split($1,$2,random_state=$3)"
+			],
+			"description": ""
+		}
+		"discreteScatter": {
+			"prefix": "dscatter",
+			"body": [
+			   "import mglearn.discrete_scateer as dscat"
+			   ""
+			],
+			"description": ""
+		}
+
+		"Pandas": {
+			"prefix": "pd",
+			"body": [
+			   "import pandas as pd"
+			   ""
+			],
+			"description": ""
+		}   
+
+		"Seaborn": {
+			"prefix": "sns",
+			"body": [
+			   "import seaborn as sns; sns.set()"
+			   ""
+			],
+			"description": ""
+		}   
+
+		"trainsplit": {
+			"prefix": "train",
+			"body": [
+			   "from sklearn.model_selection import train_test_split"
+			   "xtrain, xtest, ytrain, ytest = train_test_split($1,$2,random_state=$3)"
+			],
+			"description": ""
+		}   		
+
+		"linear reg": {
+			"prefix": "reg",
+			"body": [
+			   "from sklearn.linear_model import LinearRegression"
+			   ""
+			],
+			"description": ""
+		}   
+		"metricsScoreCluster": {
+			"prefix": "metscorec",
+			"body": [
+			   "from sklearn.metrics.cluster import silhouette_score,adjusted_rand_score"
+			   ""
+			],
+			"description": ""
+		}   
+		"metricsScore": {
+			"prefix": "metscore",
+			"body": [
+			   "from sklearn.metrics import average_precision_score,roc_curve,precision_recall_curve"
+			   ""
+			],
+			"description": ""
+		}   
+		"randomState": {
+			"prefix": "rnd",
+			"body": [
+			   "rnd = np.random.RandomState($1)"
+			   ""
+			],
+			"description": ""
+		}   
+		"SVC": {
+			"prefix": "svc",
+			"body": [
+			   "from sklearn.svm import SVC"
+			   ""
+			],
+			"description": ""
+		}   
+		"MLP": {
+			"prefix": "mlp",
+			"body": [
+			   "from sklearn.neural_network import MLPClassifier"
+			   ""
+			],
+			"description": ""
+		}   
+		"GradientBoosting": {
+			"prefix": "gradient",
+			"body": [
+			   "from sklearn.ensemble import GradientBoostingClassifier"
+			   ""
+			],
+			"description": ""
+		}  
+		"BeautifulSoup": {
+			"prefix": "beautifulsoup",
+			"body": [
+			   "from urllib.request import urlopen"
+			   "from bs4 import BeautifulSoup"
+			   "import re"
+			   "html = urlopen('http://www.$1')"
+			   "bs = BeautifulSoup(html.read() , 'html.parser')"
+			],
+			"description": ""
+		}   
+		"Selenium": {
+			"prefix": "selenium",
+			"body": [
+			   "from selenium import webdriver"
+			   "from selenium.webdriver.chrome.options import Options"
+			   "from selenium.webdriver.common.by import By"
+			   "from selenium.webdriver.support.ui import WebDriverWait"
+			   "from selenium.webdriver.remote.webelement import WebElement"
+			   "from selenium.common.exceptions import StaleElementReferenceException"
+			   "from selenium.common.exceptions import TimeoutException"
+			   "from selenium.webdriver.support import expected_conditions as EC"
+			   "import time"
+			   ""
+			],
+			"description": ""
+		}   
+		"Scrapy": {
+			"prefix": "scrapy",
+			"body": [
+			   "import scrapy"
+			   "from scrapy.linkextractors import LinkExtractor"
+			   "from scrapy.spiders import CrawlSpider, Rule"
+			   ""
+			],
+			"description": ""
+		}  
+		"NKTK": {
+			"prefix": "nltk",
+			"body": [
+			   "from nltk import word_tokenize,sent_tokenize,bigrams"
+			   "from nltk import Text,FreqDist,ngrams,pos_tag"
+			   "from nltk.book import *"
+			   ""
+			],
+			"description": ""
+		}  
+		"mglearn": {
+			"prefix": "mgl",
+			"body": [
+			   "import mglearn as mgl"
+			   ""
+			],
+			"description": ""
+		}   
+		"logistic reg": {
+			"prefix": "logi",
+			"body": [
+			   "from sklearn.linear_model import LogisticRegression"
+			   ""
+			],
+			"description": ""
+		}   
+		"Kmeans": {
+			"prefix": "kmeans",
+			"body": [
+			   "from sklearn.cluster import KMeans"
+			   ""
+			],
+			"description": ""
+		}   
+
+		"iris data": {
+			"prefix": "loadiris",
+			"body": [
+			   "from sklearn.datasets import load_iris"
+			   "iris = load_iris()"
+			],
+			"description": ""
+		}   
+		"Boston Data": {
+			"prefix": "loadboston",
+			"body": [
+			   "from sklearn.datasets import load_boston"
+			   "boston = load_boston()"
+			],
+			"description": ""
+		}   
+		"breastCancer": {
+			"prefix": "loadbreastcancer",
+			"body": [
+			   "from sklearn.datasets import load_breast_cancer"
+			   "cancer = load_breast_cancer()"
+			],
+			"description": ""
+		}   
+		"citibike data": {
+			"prefix": "loadcitibike",
+			"body": [
+			   "from sklearn.datasets import load_citibike"
+			   "citibike = load_citibike()"
+			],
+			"description": ""
+		}   
+		"blobs data": {
+			"prefix": "makeblobs",
+			"body": [
+			   "from sklearn.datasets import make_blobs"
+			   "x, y = make_blobs(n_samples=$1,n_features=$2,centers=$3,cluster_std=$4)"
+			],
+			"description": ""
+		}   
+		"classification Report": {
+			"prefix": "classreport",
+			"body": [
+			   "from sklearn.metrics import classification_report"
+		      ],
+			"description": ""
+		}   
+		"f1 score": {
+			"prefix": "f1score",
+			"body": [
+			   "from sklearn.metrics import f1_score"
+			],
+			"description": ""
+		}   
+		"moons data": {
+			"prefix": "makemoons",
+			"body": [
+			   "from sklearn.datasets import make_moons"
+			   "x, y = make_moons(n_samples=$1,noise=$2,random_state=$3)"
+			],
+			"description": ""
+		}   
+		"circle data": {
+			"prefix": "makecircle",
+			"body": [
+			   "from sklearn.datasets import make_circles"
+			   ""
+			],
+			"description": ""
+		}   
+		"pca": {
+			"prefix": "pca",
+			"body": [
+			   "from sklearn.decomposition import PCA"
+			   ""
+			],
+			"description": ""
+		}   
+		"OneHot": {
+			"prefix": "onehot",
+			"body": [
+			   "from sklearn.preprocessing import OneHotEncoder"
+			   ""
+			],
+			"description": ""
+		}   
+		"RandomForest": {
+			"prefix": "forest",
+			"body": [
+			   "from sklearn.ensemble import RandomForestClassifier"
+			   ""
+			],
+			"description": ""
+		}   
+		"Ridge Reg": {
+			"prefix": "ridge",
+			"body": [
+			   "from sklearn.linear_model import Ridge"
+			   ""
+			],
+			"description": ""
+		}   
+		"Scaling": {
+			"prefix": "scale",
+			"body": [
+			   "from sklearn.preprocessing import RobustScaler,StandardScaler,MinMaxScaler"
+			   ""
+			],
+			"description": ""
+		}   
+		"NMF": {
+			"prefix": "nmf",
+			"body": [
+			   "from sklearn.decomposition import NMF"
+			   ""
+			],
+			"description": ""
+		}   
+		"Polynomial": {
+			"prefix": "polynomial",
+			"body": [
+				"from sklearn.preprocessing import PolynomialFeatures"
+				""
+			],
+			"description": ""
+		}   
+		"GridSearchCV": {
+			"prefix": "grid",
+			"body": [
+				"from sklearn.model_selection import GridSearchCV"
+				""
+			],
+			"description": ""
+		}   
+		"Cross": {
+			"prefix": "cross",
+			"body": [
+				"from sklearn.model_selection import cross_validate"
+				""
+			],
+			"description": ""
+		}   
+		"chromeScrape": {
+			"prefix": "chromescraping",
+			"body": [
+				"from selenium import webdriver"
+				"from selenium.webdriver.chrome.options import Options"
+				"from selenium.webdriver.common.by import By"
+				"from selenium.webdriver.support.ui import WebDriverWait"
+				"from selenium.webdriver.remote.webelement import WebElement"
+				"from selenium.common.exceptions import StaleElementReferenceException"
+				"from selenium.common.exceptions import TimeoutException"
+				"from selenium.webdriver.support import expected_conditions as EC"
+				"import time"
+				"chrome_options = Options()"
+				"chrome_options.add_argument('--headless')"
+				"driver = webdriver.Chrome(executable_path = '/Users/yasumasa/Downloads/chromedriver',options = chrome_options)"
+				"driver.get('http://$1')"
+				"driver.close()"
+			],
+			"description": ""
+		}   
+
+		"CrossValScore": {
+			"prefix": "crossval",
+			"body": [
+				"from sklearn.model_selection import cross_val_score"
+				""
+			],
+			"description": ""
+		}   
+		"validation curve": {
+			"prefix": "valicurve",
+			"body": [
+				"from sklearn.model_selection import validation_curve"
+				"train_score, val_score = validation_curve($1, $2,$3,'$4',$5,cv=$6)"
+			],
+			"description": ""
+		}   
+
+		"DecisionTreeRegressor": {
+			"prefix": "treereg",
+			"body": [
+				"from sklearn.tree import DecisionTreeRegressor"
+				""
+			],
+			"description": ""
+		}
+
+		"DecisionTreeClassifier": {
+			"prefix": "treeclass",
+			"body": [
+				"from sklearn.tree import DecisionTreeClassifier"
+				""
+			],
+			"description": ""
+		}   		
+		"Kfold": {
+			"prefix": "kfold",
+			"body": [
+				"from sklearn.model_selection import KFold,StratifiedKFold,LeaveOneOut"
+				""
+			],
+			"description": ""
+		}   	
+		"dummyClassifier": {
+			"prefix": "dummyclass",
+			"body": [
+				"from sklearn.dummy import DummyClassifier"
+				""
+			],
+			"description": ""
+		}   	
+
+		"GroupKfold": {
+			"prefix": "groupkfold",
+			"body": [
+				"from sklearn.model_selection import GroupKFold"
+				""
+			],
+			"description": ""
+		}   		
+		"accuracy_score": {
+			"prefix": "accuracy",
+			"body": [
+				"from sklearn.metrics import accuracy_score"
+				""
+			],
+			"description": ""
+		}   		
+		"mglearn plots": {
+			"prefix": "mgplot",
+			"body": [
+				"import mglearn.plots as mplt"
+				""
+			],
+			"description": ""
+		}   		
+		"mglearn tools": {
+			"prefix": "mgtool",
+			"body": [
+				"import mglearn.tools as mtool"
+				""
+			],
+			"description": ""
+		}   
+		"mglearn datasets": {
+			"prefix": "mgdata",
+			"body": [
+				"import mglearn.datasets as mdata"
+				""
+			],
+			"description": ""
+		}   
+		"KneighborClassifier": {
+			"prefix": "kneiclass",
+			"body": [
+				"from sklearn.neighbors import KNeighborsClassifier"
+				""
+			],
+			"description": ""
+		}   
+		"KneighborRegressor": {
+			"prefix": "kneireg",	
+			"body": [
+				"from sklearn.neighbors import KNeighborsRegressor"
+				""
+			],
+			"description": ""
+		}   
+		"RFE": {
+			"prefix": "rfe",
+			"body": [
+				"from sklearn.feature_selection import RFE"
+				""
+			],
+			"description": ""
+		}   
+		"DBSCAN": {
+			"prefix": "dbscan",
+			"body": [
+				"from sklearn.cluster import DBSCAN"
+				""
+			],
+			"description": ""
+		}   
+		"Agglomerative": {
+			"prefix": "agglo",
+			"body": [
+				"from sklearn.cluster import AgglomerativeClustering"
+				""
+			],
+			"description": ""
+		}   
+		"GaussianMix": {
+			"prefix": "gaussianMixture",
+			"body": [
+				"from sklearn.mixture import GaussianMixture"
+				""
+			],
+			"description": ""
+		}   
+		"pairwiseDistance": {
+			"prefix": "pairwisedistance",
+			"body": [
+				"from sklearn.metrics import pairwise_distances"
+				""
+			],
+			"description": ""
+		}   
+		"Custom Estimater": {
+			"prefix": "customestimater",
+			"body": [
+				"from sklearn.base import BaseEstimator, ClassifierMixin"
+				""
+			],
+			"description": ""
+		}   
+		"MakePipeline": {
+			"prefix": "makepipe",
+			"body": [
+				"from sklearn.pipeline import make_pipeline"
+				""
+			],
+			"description": ""
+		}   
+		"selectFeature": {
+			"prefix": "selectf",
+			"body": [
+				"from sklearn.feature_selection import SelectPercentile,SelectKBest,SelectFromModel"
+				""
+			],
+			"description": ""
+		}   
+
+		"ShuffleSplit": {
+			"prefix": "shuffle",
+			"body": [
+				"from sklearn.model_selection import ShuffleSplit"
+				""
+			],
+			"description": ""
+		}   
+		"Isomap": {
+			"prefix": "isomap",
+			"body": [
+				"from sklearn.manifold import Isomap"
+				""
+			],
+			"description": ""
+		}   
+		"cdist": {
+			"prefix": "cdist",
+			"body": [
+				"from scipy.spatial.distance import cdist"
+				""
+			],
+			"description": ""
+		}   
+		"No Ticks": {
+			"prefix": "noticks",
+			"body": [
+				"subplot_kw={'xticks':[],'yticks':[]}"
+			],
+			"description": ""
+		}  
+		"Tate Vector": {
+			"prefix": "tate",
+			"body": [
+				"[:,None]"
+			],
+			"description": ""
+		}   
+		"LearningCurve": {
+			"prefix": "learningCurve",
+			"body": [
+				"from sklearn.model_selection import learning_curve"
+				"N, train_lc, val_lc = learning_curve($1,$2,$3,cv=$4, train_sizes=$5)"
+			],
+			"description": ""
+		}   
+		"confution_matrix": {
+			"prefix": "confusion",
+			"body": [
+				"from sklearn.metrics import confusion_matrix"
+				""
+			],
+			"description": ""
+		}   
+		"loadDigits": {
+			"prefix": "loaddigits",
+			"body": [
+				"from sklearn.datasets import load_digits"
+				"digits = load_digits()"
+			],
+			"description": ""
+		}   
+		"x[:,0]": {
+			"prefix": "x0",
+			"body": [
+				"x[:,0]"
+			],
+			"description": ""
+		}   
+		"x[:,1]": {
+			"prefix": "x1",
+			"body": [
+				"x[:,1]"
+			],
+			"description": ""
+		}   
+		"GaussianNB": {
+			"prefix": "gaussNB",
+			"body": [
+				"from sklearn.naive_bayes import GaussianNB"
+				""
+			],
+			"description": ""
+		}   
+		"LeaveOneOut": {
+			"prefix": "leaveone",
+			"body": [
+				"from sklearn.model_selection import LeaveOneOut"
+				""
+			],
+			"description": ""
+		}   
+		"Pipeline": {
+			"prefix": "pipe",
+			"body": [
+				"from sklearn.pipeline import Pipeline"
+				""
+			],
+			"description": ""
+		} 
+		"roc_auc_score": {
+			"prefix": "rocaucscore",
+			"body": [
+				"from sklearn.metrics import roc_auc_score"
+			],
+			"description": ""
+		}   
+		"roc_curve": {
+			"prefix": "roccurve",
+			"body": [
+				"from sklearn.metrics import roc_curve"
+				"fpr, tpr, threshholds = roc_curve($1,$2)"
+			],
+			"description": ""
+		}   
+		"precision_recall_curve": {
+			"prefix": "precision",
+			"body": [
+				"from sklearn.metrics import precision_recall_curve"
+				"precision, recall, threshholds = precision_recall_curve($1,$2)"
+			],
+			"description": ""
+		}   
+		"select percentile": {
+			"prefix": "selectpercent",
+			"body": [
+				"from sklearn.feature_selection import SelectPercentile"
+				"select = SelectPercentile(percentile=50)"
+			],
+			"description": ""
+		}   
+		"select from model": {
+			"prefix": "selectfrom",
+			"body": [
+				"from sklearn.feature_selection import SelectFromModel"
+				"select = SelectFromModel($1)"
+			],
+			"description": ""
+		}   
+		"select Kbest": {
+			"prefix": "selectkbest",
+			"body": [
+				"from sklearn.feature_selection import SelectKBest"
+				"select = SelectKBest($1)"
+			],
+			"description": ""
+		}   
+		"fetch lfw peaple": {
+			"prefix": "fetchlfwpe",
+			"body": [
+				"from sklearn.datasets import fetch_lfw_people"
+				"people =fetch_lfw_people(min_faces_per_person=$1,resize=$2)"
+			],
+			"description": ""
+		}   
+		"plt subplots": {
+			"prefix": "subpl",
+			"body": [
+				"fig, axes = plt.subplots($1,$2)"
+			],
+			"description": ""
+		}   
+
+}
